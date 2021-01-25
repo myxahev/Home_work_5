@@ -1,7 +1,6 @@
 # Создать программный файл в текстовом формате, записать в него построчно данные, вводимые пользователем.
 # Об окончании ввода данных будет свидетельствовать пустая строка.
 
-out_f = open("out_file.txt", "w")
-str_list = ['stroka_1\n', 'stroka_2\n', 'stroka_3\n']
-out_f.writelines(str_list)
-out_f.close()
+with open("out_file.txt", "w") as out_f:
+    str_list = ['stroka_1\n', 'stroka_2\n', 'stroka_3\n']
+    out_f.writelines(str_list)
