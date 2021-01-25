@@ -1,6 +1,7 @@
 # Создать текстовый файл (не программно), сохранить в нём несколько строк,
 # выполнить подсчёт строк и слов в каждой строке.
 
-print(sum(1 for line in open('out_file.txt')))
+with open('out_file.txt') as file:
+    print(sum(1 for line in file))
 
-print(len(open('out_file.txt').read()))
+    print(len(file.read()))
