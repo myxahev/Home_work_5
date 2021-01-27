@@ -6,7 +6,7 @@ with open('5.5.txt', 'w') as f:
 
     f.write('1 22 333 4444 55555 666666 7777777 888888888 999999999')
 
-with open('5.5.txt') as file_object:
-    a = file_object.readline().split()
-    result = sum([int(item) for item in a])
-    print(result)
+with open('5.5.txt') as f:
+    a = f.readline().split()
+    sum_f = sum([int(item) for item in a])
+    print(sum_f)
