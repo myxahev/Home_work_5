@@ -8,5 +8,5 @@ with open('5.5.txt', 'w') as f:
 
 with open('5.5.txt') as f:
     a = f.readline().split()
-    sum_f = sum([int(item) for item in a])
+    sum_f = sum([int(i) for i in a])
     print(sum_f)
